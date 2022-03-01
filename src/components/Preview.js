@@ -1,7 +1,18 @@
-function Preview() {
-    return (
-        <div id="preview">test</div>
-    );
+import React from "react";
+import { connect } from "react-redux";
+
+class Preview extends React.Component {
+    render() {
+        return (
+            <div id="preview">{this.props.editorText}</div>
+        );
+    }
 }
 
-export default Preview;
+function mapStateToProps(state) {
+    return {
+        editorText: state.editorText
+    }
+}
+
+export default connect(mapStateToProps)(Preview);
