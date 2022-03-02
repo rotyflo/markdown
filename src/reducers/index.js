@@ -1,7 +1,7 @@
 import HANDLE_EDITOR from '../actions';
 
 const defaultState = {
-    editorText: '',
+    editorText: 'test',
     previewText: ''
 }
 

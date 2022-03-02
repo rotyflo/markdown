@@ -1,10 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
+import { marked } from "marked";
 
 class Preview extends React.Component {
     render() {
+        let html = marked.parse(this.props.editorText);
+
         return (
-            <div id="preview">{this.props.editorText}</div>
+            <pre id="preview">{html}</pre>
         );
     }
 }

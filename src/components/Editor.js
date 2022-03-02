@@ -5,7 +5,11 @@ import React from 'react';
 class Editor extends React.Component {
     render() {
         return (
-            <textarea id="editor" onChange={event => {this.props.handleEditor(event.target.value)}} value={this.props.editorText}></textarea>
+            <textarea
+                id="editor"
+                onChange={event => this.props.handleEditor(event.target.value)}
+                value={this.props.editorText}
+            ></textarea>
         );
     }
 }
@@ -18,7 +22,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        handleEditor: (text) => {
+        handleEditor: text => {
             dispatch(handleEditor(text));
         }
     }
