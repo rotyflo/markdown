@@ -13,23 +13,18 @@ code {
 }
 
 #editor {
-  height: 70vh;
+  height: 75vh;
 }
 
 #preview {
   margin-top: 0;
   margin-bottom: 6px;
-  height: 70vh;
+  height: 75vh;
   overflow-y: scroll;
 }
 
-header {
-  display: inline !important;
-}
-
-.buttons {
-  float: right;
-  padding-top: 20px;
+.buttons > .btn {
+  width: 100%;
 }
 
 
