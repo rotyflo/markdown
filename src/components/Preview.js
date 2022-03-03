@@ -7,7 +7,7 @@ class Preview extends React.Component {
         let html = marked.parse(this.props.editorText);
 
         return (
-            <pre id="preview">{html}</pre>
+            <pre id="preview" dangerouslySetInnerHTML={{__html: html}} />
         );
     }
 }

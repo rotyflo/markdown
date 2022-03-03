@@ -2,6 +2,7 @@ import HANDLE_EDITOR from '../actions';
 
 const defaultState = {
     editorText: `# Welcome to my React Markdown Previewer!
+
 ## This is a sub-heading...
 ### And here's some other cool stuff:
     
