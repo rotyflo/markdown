@@ -28,3 +28,22 @@ code {
   bottom: 0;
   right: 0;
 }
+
+
+/* Fixes for terminal theme */
+
+code {
+  display: inline !important;
+}
+
+pre > code {
+  --code-bg-color: none !important;
+}
+
+pre > * {
+  margin: 0 !important;
+}
+
+ul, ol {
+  white-space: normal;
+}
