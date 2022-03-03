@@ -1,0 +1,2 @@
+export const HANDLE_EDITOR = 'HANDLE_EDITOR';
+export const HANDLE_BUTTONS = 'HANDLE_BUTTONS';

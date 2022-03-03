@@ -13,9 +13,18 @@ code {
 }
 
 #editor {
-  height: 10em;
+  height: 80vh;
 }
 
-/* #preview {
-  height: 20em;
-} */
+#preview {
+  margin-top: 0;
+  margin-bottom: 6px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.btn {
+  position: absolute !important;
+  bottom: 0;
+  right: 0;
+}

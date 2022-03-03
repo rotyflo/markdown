@@ -1,10 +1,14 @@
-let HANDLE_EDITOR = 'HANDLE_EDITOR';
+import * as types from './types';
 
 export function handleEditor(text) {
     return {
-        type: HANDLE_EDITOR,
+        type: types.HANDLE_EDITOR,
         text
     };
 }
 
-export default HANDLE_EDITOR;
+export function handleButtons() {
+    return {
+        type: types.HANDLE_BUTTONS
+    };
+}

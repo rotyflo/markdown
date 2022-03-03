@@ -1,4 +1,4 @@
-import HANDLE_EDITOR from '../actions';
+import * as actionTypes from '../actions/types';
 
 const defaultState = {
     editorText: `# Welcome to my React Markdown Previewer!
@@ -44,15 +44,25 @@ And here. | Okay. | I think we get it.
 1. And last but not least, let's not forget embedded images:
 
 ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)`,
-    previewText: ''
+    previewText: '',
+    currentView: 'editor'
 }
 
 export default function markdownReducer(state = defaultState, action) {
     switch (action.type) {
-        case HANDLE_EDITOR:
+        case actionTypes.HANDLE_EDITOR:
+            console.log(state);
             return Object.assign({}, state, {
                 editorText: action.text,
                 previewText: state.editorText
+            });
+
+        case actionTypes.HANDLE_BUTTONS:
+            console.log(state);
+            let newView = state.currentView === 'preview' ? 'editor' : 'preview';
+            
+            return Object.assign({}, state, {
+                currentView: newView
             });
         
         default:
