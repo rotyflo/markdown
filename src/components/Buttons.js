@@ -5,7 +5,7 @@ import { handleButtons } from "../actions";
 class Buttons extends React.Component {
     render() {
         return (
-            <div>
+            <div className="buttons">
                 <button 
                     onClick={() => this.props.handleButtons()}
                     className='btn'

@@ -10,6 +10,7 @@ class App extends React.Component {
       <div className="App container">
         <header className="App-header">
           <h1>Markdown Editor</h1>
+          <Buttons />
         </header>
   
         <div style={this.props.currentView === 'editor' ? {display: 'initial'} : {display: 'none'}}>
@@ -18,7 +19,6 @@ class App extends React.Component {
         <div style={this.props.currentView === 'preview' ? {display: 'initial'} : {display: 'none'}}>
           <Preview />
         </div>
-        <Buttons />
       </div>
     );
   }
