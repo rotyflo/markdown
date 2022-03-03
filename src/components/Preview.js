@@ -4,6 +4,9 @@ import { marked } from "marked";
 
 class Preview extends React.Component {
     render() {
+        marked.setOptions({
+            breaks: true
+          });
         let html = marked.parse(this.props.editorText);
 
         return (
