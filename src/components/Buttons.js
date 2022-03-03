@@ -8,7 +8,7 @@ class Buttons extends React.Component {
             <div className="buttons">
                 <button 
                     onClick={() => this.props.handleButtons()}
-                    className='btn'
+                    className='btn btn-ghost'
                 >
                     Change View
                 </button>

@@ -13,14 +13,11 @@ code {
 }
 
 #editor {
-  height: 75vh;
+  height: 70vh;
 }
 
 #preview {
   margin-top: 0;
-  margin-bottom: 6px;
-  height: 75vh;
-  overflow-y: scroll;
 }
 
 .buttons > .btn {
