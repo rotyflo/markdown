@@ -24,7 +24,7 @@ code {
 }
 
 #preview {
-  margin-top: 0;
+  margin-top: 3.5rem;
   border: 2px solid var(--font-color);
 }
 
@@ -33,9 +33,9 @@ header {
   margin: 0;
 }
 
-h3 {
+#title {
   display: inline;
-  position: fixed;
+  position: absolute;
   top: 1.5rem;
 }
 

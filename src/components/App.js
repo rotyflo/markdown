@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App container">
-        <h3>Markdown Editor</h3>
+        <h3 id='title'>Markdown Editor</h3>
         <Buttons />
         <div style={this.props.currentView === 'editor' ? {display: 'initial'} : {display: 'none'}}>
           <Editor />
