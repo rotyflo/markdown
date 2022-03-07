@@ -8,10 +8,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App container">
-        <header>
-          <h1>Markdown Editor</h1>
-          <Buttons />
-        </header>
+        <h3>Markdown Editor</h3>
+        <Buttons />
         <div style={this.props.currentView === 'editor' ? {display: 'initial'} : {display: 'none'}}>
           <Editor />
         </div>

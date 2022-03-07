@@ -9,13 +9,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  padding-top: 1rem;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-header {
-  display: inline;
 }
 
 #editor {
@@ -28,15 +28,27 @@ header {
   border: 2px solid var(--font-color);
 }
 
+header {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  display: inline;
+  position: fixed;
+  top: 1.5rem;
+}
+
 .buttons {
   display: inline;
 }
 
 .buttons > .btn {
-  margin-top: 1.5rem;
   float: right;
   border: 2px solid var(--error-color);
   color: var(--error-color);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-bottom: 1rem;
 }
 
 
